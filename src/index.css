@@ -7,5 +7,4 @@
     margin: 10px;
     padding: 50px;
     text-align: center;}
-
-/* #root .e-header-icon-wrapper,#root .e-subject-wrap{display: none} */
+.heading{width: 100%;margin: 15px;font-weight: bolder;}

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import {Col,Row,Container,Modal,Form} from "react-bootstrap";
 import moment from "moment"
-import { ScheduleComponent, Day, Week, WorkWeek, Month, Agenda,Timezone, Inject } from '@syncfusion/ej2-react-schedule';
+import { ScheduleComponent, Day, Week, WorkWeek, Month,Timezone, Inject } from '@syncfusion/ej2-react-schedule';
 
 const initialdata={
     "ok": true,
@@ -32,12 +32,12 @@ const initialdata={
                     "end_time": "Feb 1 2020 1:54PM"
                 },
                 {
-                    "start_time": "Mar 2 2020  11:11AM",
-                    "end_time": "Mar 2 2020 2:00PM"
+                    "start_time": "Mar 1 2020  11:11AM",
+                    "end_time": "Mar 1 2020 2:00PM"
                 },
                 {
-                    "start_time": "Mar 21 2020  5:33PM",
-                    "end_time": "Mar 21 2020 8:02PM"
+                    "start_time": "Mar 16 2020  5:33PM",
+                    "end_time": "Mar 16 2020 8:02PM"
                 }
             ]
         }
@@ -127,10 +127,11 @@ class App extends Component {
             <div>
               <Container>
                     <Row>
+                        <h2 className="text-center heading">Users Activity Periods</h2>
                        {List}
                         <Modal size="lg" show={this.state.isModalOpen} onHide={this.modalClosehandle}>
                             <Modal.Header closeButton >
-                                <Modal.Title>View Task</Modal.Title>
+                                <Modal.Title>View Activity Periods</Modal.Title>
                             </Modal.Header>
                             <Modal.Body>
                                 <Form>
